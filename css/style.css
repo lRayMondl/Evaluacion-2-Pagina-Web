@@ -61,26 +61,41 @@ html {
         background-color: #e22104;
           border-color: #e22104;
           color: #fff; }
-    .hero {
-      height: 600px;
-      position: relative; }
-        @media (min-width: 992px) {
+          
+          
           .hero {
-            height: calc(100vh - 130px); } }
-            
-        .hero-info {
-          padding-top: 60px; }
+            height: 600px;
+            position: relative;
+            margin: 0 auto; /* Esto centrará horizontalmente el elemento */
+          }
+          
+          @media (min-width: 992px) {
+            .hero {
+              height: calc(100vh - 130px);
+            }
+          }
+          
+          .hero-info {
+            padding-top: 60px;
+          }
+          
           @media (min-width: 1420px) {
             .hero-info {
-              padding-top: 140px; } }
-            .hero-info li {
-              padding-right: 15px;
-              padding-left: 15px; }
-            .hero-info .lnr {
-              display: block;
-              font-size: 32px;
-              margin-bottom: 15px; }
-
+              padding-top: 140px;
+            }
+          }
+          
+          .hero-info li {
+            padding-right: 15px;
+            padding-left: 15px;
+          }
+          
+          .hero-info .lnr {
+            display: block;
+            font-size: 32px;
+            margin-bottom: 15px;
+          }
+          
     .img-bg {
       background-size: cover;
       background-repeat: no-repeat;
