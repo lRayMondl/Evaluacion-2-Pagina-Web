@@ -30,7 +30,7 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-md bg-body-tertiary">
   <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
           <img src="Img/fotor-ai-2024050223215.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
           Gusto Italiani
         </a>
@@ -58,7 +58,82 @@
 
   <!--Formulario -->
 
-      
+  <h2>Formulario</h2>
+    <form id="miFormulario" action="/procesar_formulario" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+        <br><br>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+        <br><br>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required>
+        <br><br>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+        <br><br>
+        <label for="pais">País:</label>
+        <input type="text" id="pais" name="pais" required>
+        <br><br>
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" id="ciudad" name="ciudad" required>
+        <br><br>
+        <button type="submit" class="boton-azul">Enviar</button>
+        <button type="button" class="boton-rojo" onclick="cancelar()">Cancelar</button>
+    </form>
+
+    <style>
+      .boton-azul {
+          background-color: blue;
+          color: white;
+      }
+      .boton-rojo {
+          background-color: red;
+          color: white;
+      }
+  </style>
+
+    <script>
+      function cancelar() {
+          // Lógica para cancelar, aquí podrías redirigir o limpiar el formulario
+          document.getElementById("miFormulario").reset(); // Esto limpia el formulario
+      }
+  </script>
+
+      <footer>
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4">
+        <h5 class="mb-3">footer content</h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+          voluptatem veniam, est atque cumque eum delectus sint!
+        </p>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <h4>Open Hours</h4>
+	         		<ul class="open-hours">
+		                <li class="d-flex justify-content-between"><span>Monday</span><span>9:00 - 24:00</span></li>
+		                <li class="d-flex justify-content-between"><span>Tuesday</span><span>9:00 - 24:00</span></li>
+		                <li class="d-flex justify-content-between"><span>Wednesday</span><span>9:00 - 24:00</span></li>
+		                <li class="d-flex justify-content-between"><span>Thursday</span><span>9:00 - 24:00</span></li>
+		                <li class="d-flex justify-content-between"><span>Friday</span><span>9:00 - 02:00</span></li>
+		                <li class="d-flex justify-content-between"><span>Saturday</span><span>9:00 - 02:00</span></li>
+		                <li class="d-flex justify-content-between"><span>Sunday</span><span> Closed</span></li>
+		              </ul>
+      </div>
+    </div>
+  </div>
+  <div class="text-center p-3">
+    © 2024 Copyright:
+    <a class="text-dark" href=""></a>
+  </div>
+  <!-- Copyright -->
+  </footer>
       
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
