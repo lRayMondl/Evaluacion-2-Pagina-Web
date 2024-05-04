@@ -1,11 +1,29 @@
 html {
     overflow-x: hidden; }
-  
+
   body {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    color: #000;
-    background-color: #f4ede5; }
+    padding-top: 56px; 
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Img/www3.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    padding: 20px;
+  }
+
+    .navbar {
+      background-color: transparent !important; 
+    }
+
+    .navbar-nav .nav-link {
+      color: #fff !important; 
+       font-weight: bold; 
+    }
+    .navbar-brand {
+      color: #fff !important; 
+      font-weight: bold; 
+    }
   
   .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-family: 'Josefin Sans', sans-serif;
@@ -36,20 +54,6 @@ html {
       .btn {
         font-size: 14px;
         font-weight: 600; }
-      
-      .btn-primary {
-        display: inline-block;
-        background-color: #f34949;
-        border-color: #f34949;
-        color: #fff;
-        border-radius: 30px;
-        padding: 9px 25px;
-        text-transform: capitalize;
-        -webkit-transition: all 0.3s ease 0s;
-        -moz-transition: all 0.3s ease 0s;
-        -o-transition: all 0.3s ease 0s;
-        transition: all 0.3s ease 0s; }
-        .btn-primary:hover {
-          background-color: #e22104;
-          border-color: #e22104;
-          color: #fff; }
+
+
+
