@@ -81,36 +81,44 @@ html {
               font-size: 32px;
               margin-bottom: 15px; }
 
-/*==================================
-=            RESPONSIVE            =
-==================================*/
-.only-mobile {
-  display: none !important; }
+    .img-bg {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center; }
+      
+    .heading-section {
+      margin-bottom: 30px; }
+        
+              
+            
+/*============================
+=            MENU            =
+============================*/
+.menus:hover img {
+  transform: scale(1.1, 1.1); }
 
-@media (max-width: 992px) {
-  .hero {
-    height: 100%; }
-  .boxed-page {
-    padding-top: 100px; }
-  .only-mobile {
-    display: block !important; }
-  .only-desktop {
-    display: none !important; }
-  .menu-wrap {
-    margin-bottom: 30px; }
-  .footer-widget {
-    margin-bottom: 30px; }
-  .hero-left {
-    padding-top: 30px;
-    padding-bottom: 30px; } }
+.menu-img {
+  overflow: hidden;
+  height: 80px;
+  width: 80px; }
+  .menu-img img {
+    transition: all .5s ease;
+    height: 100%;
+    object-fit: cover; }
 
-@media (max-width: 767px) {
-  .hero-left,
-  .hero-carousel .owl-item img {
-    height: 600px; }
-  .thumb-menu img {
-    height: 90px; }
-  .img-2 {
-    height: 500px; } }
+.menu-price {
+  text-align: right; }
 
-/*=====  End of RESPONSIVE  ======*/
+.menus {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed #ffffff; }
+  .menus p, .menus h3 {
+    margin-bottom: 0; }
+  .menus .text-wrap {
+    width: calc(100% - 95px);
+    margin-left: 15px; }
+    .menus .text-wrap h4 {
+      font-weight: 300; }
+
+/*=====  End of MENU  ======*/
