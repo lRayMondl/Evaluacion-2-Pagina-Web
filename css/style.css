@@ -1,29 +1,19 @@
 html {
     overflow-x: hidden; }
 
-  body {
-    padding-top: 56px; 
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Img/www3.jpg');
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    font-family: Arial, sans-serif;
-    color: #fff;
-    padding: 20px;
-  }
-
     .navbar {
       background-color: transparent !important; 
-    }
-
+      }
+  
     .navbar-nav .nav-link {
       color: #fff !important; 
-       font-weight: bold; 
-    }
+        font-weight: bold; 
+      }
     .navbar-brand {
       color: #fff !important; 
       font-weight: bold; 
-    }
+      }
+
   
   .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-family: 'Josefin Sans', sans-serif;
@@ -52,31 +42,75 @@ html {
       padding-left: 90px; }
 
     .btn {
-        font-size: 14px;
-        font-weight: 600; }
+      font-size: 14px;
+      font-weight: 600; }
 
-        .btn-primary {
-          display: inline-block;
-          background-color: #f34949;
-          border-color: #f34949;
-          color: #fff;
-          border-radius: 30px;
-          padding: 9px 25px;
-          text-transform: capitalize;
-          -webkit-transition: all 0.3s ease 0s;
-          -moz-transition: all 0.3s ease 0s;
-          -o-transition: all 0.3s ease 0s;
-          transition: all 0.3s ease 0s; }
-          .btn-primary:hover {
-            background-color: #e22104;
-            border-color: #e22104;
-            color: #fff; }
-            
+      .btn-primary {
+        display: inline-block;
+        background-color: #f34949;
+        border-color: #f34949;
+        color: #fff;
+        border-radius: 30px;
+        padding: 9px 25px;
+        text-transform: capitalize;
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s; }
+      .btn-primary:hover {
+        background-color: #e22104;
+          border-color: #e22104;
+          color: #fff; }
     .hero {
       height: 600px;
       position: relative; }
-      @media (min-width: 992px) {
-        .hero {
-          height: calc(100vh - 130px); } }
+        @media (min-width: 992px) {
+          .hero {
+            height: calc(100vh - 130px); } }
+            
+        .hero-info {
+          padding-top: 60px; }
+          @media (min-width: 1420px) {
+            .hero-info {
+              padding-top: 140px; } }
+            .hero-info li {
+              padding-right: 15px;
+              padding-left: 15px; }
+            .hero-info .lnr {
+              display: block;
+              font-size: 32px;
+              margin-bottom: 15px; }
 
+/*==================================
+=            RESPONSIVE            =
+==================================*/
+.only-mobile {
+  display: none !important; }
 
+@media (max-width: 992px) {
+  .hero {
+    height: 100%; }
+  .boxed-page {
+    padding-top: 100px; }
+  .only-mobile {
+    display: block !important; }
+  .only-desktop {
+    display: none !important; }
+  .menu-wrap {
+    margin-bottom: 30px; }
+  .footer-widget {
+    margin-bottom: 30px; }
+  .hero-left {
+    padding-top: 30px;
+    padding-bottom: 30px; } }
+
+@media (max-width: 767px) {
+  .hero-left,
+  .hero-carousel .owl-item img {
+    height: 600px; }
+  .thumb-menu img {
+    height: 90px; }
+  .img-2 {
+    height: 500px; } }
+
+/*=====  End of RESPONSIVE  ======*/
