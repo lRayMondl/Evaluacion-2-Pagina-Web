@@ -66,7 +66,7 @@ html {
           .hero {
             height: 600px;
             position: relative;
-            margin: 0 auto; /* Esto centrará horizontalmente el elemento */
+            margin: 0 auto;
           }
           
           @media (min-width: 992px) {
