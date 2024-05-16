@@ -59,52 +59,72 @@
   </div>
 </nav>
 
-  <!--Formulario -->
-  <h2>Crear Cuenta</h2>
-    <form id="miFormulario" action="/procesar_formulario" method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <br><br>
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido" required>
-        <br><br>
-        <label for="correo">Correo electrónico:</label>
-        <input type="email" id="correo" name="correo" required>
-        <br><br>
-        <label for="edad">Edad:</label>
-        <input type="number" id="edad" name="edad" required>
-        <br><br>
-        <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" required>
-        <br><br>
-        <label for="pais">País:</label>
-        <input type="text" id="pais" name="pais" required>
-        <br><br>
-        <label for="ciudad">Ciudad:</label>
-        <input type="text" id="ciudad" name="ciudad" required>
-        <br><br>
-        <button type="submit" class="boton-azul">Enviar</button>
-        <button type="button" class="boton-rojo" onclick="cancelar()">Cancelar</button>
-    </form>
+<!--Formulario -->
+<section id="reservation">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-5">
+              <div class="section-content p-5">
+                  <div class="heading-section text-center">
+                      <h2>
+                          Reserva Tu Mesa
+                      </h2>
+                  </div>
+                  <form method="post" name="contact-us" action="">
+                      <div class="row">
+                          <div class="col-md-12">
+                              <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                          </div>
+                          <div class="col-md-12">
+                              <input type="text" class="form-control" id="email" name="email" placeholder="Email">
+                          </div>
+                          <div class="col-md-12">
+                              <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone">
+                          </div>
+                          <div class="col-md-6">
+                              <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
+                                  <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" placeholder="Date" />
+                                  <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                                      <div class="input-group-text">
+                                          <span class="lnr lnr-calendar-full"></span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
 
-    <style>
-      .boton-azul {
-          background-color: blue;
-          outline-color: black;
-          color: white;
-      }
-      .boton-rojo {
-          background-color: red;
-          outline-color: black;
-          color: white;
-      }
-  </style>
+                          <div class="col-md-6">
+                              <div class="input-group date" id="datetimepicker3" data-target-input="nearest">
+                                  <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3" placeholder="Time" />
+                                  <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
+                                      <div class="input-group-text">
+                                          <span class="lnr lnr-clock"></span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
 
-    <script>
-      function cancelar() {
-          document.getElementById("miFormulario").reset(); 
-      }
-  </script>
+                          <div class="col-md-12">
+                              <select class="form-control" id="selectPerson">
+                                  <option></option>
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                              </select>
+                          </div>
+               
+                          <div class="col-md-12 text-center">
+                              <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit">Reservar</button>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+      
+  </div>
+</section> 
 
 <!-- Footer -->
 
