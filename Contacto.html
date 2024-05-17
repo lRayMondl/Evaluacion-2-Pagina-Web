@@ -12,7 +12,6 @@
       crossorigin="anonymous"/>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
      <link rel="stylesheet" href="css/style.css" />
-     <script src="Java.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
      <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Josefin+Sans:300,400,700">
@@ -49,7 +48,7 @@
           <a class="nav-link" href="Menu.html">Menu</Menu></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Contacto.html">Contacto</a>
+          <a class="nav-link" href="Contacto.html">Reservacion</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="SobreNosotros.html">Sobre Nosotros</a>
@@ -62,69 +61,86 @@
 <!--Formulario -->
 <section id="reservation">
   <div class="container">
-      <div class="row">
-          <div class="col-lg-5">
-              <div class="section-content p-5">
-                  <div class="heading-section text-center">
-                      <h2>
-                          Reserva Tu Mesa
-                      </h2>
-                  </div>
-                  <form method="post" name="contact-us" action="">
-                      <div class="row">
-                          <div class="col-md-12">
-                              <input type="text" class="form-control" id="name" name="name" placeholder="Name">
-                          </div>
-                          <div class="col-md-12">
-                              <input type="text" class="form-control" id="email" name="email" placeholder="Email">
-                          </div>
-                          <div class="col-md-12">
-                              <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone">
-                          </div>
-                          <div class="col-md-6">
-                              <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
-                                  <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" placeholder="Date" />
-                                  <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
-                                      <div class="input-group-text">
-                                          <span class="lnr lnr-calendar-full"></span>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-
-                          <div class="col-md-6">
-                              <div class="input-group date" id="datetimepicker3" data-target-input="nearest">
-                                  <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3" placeholder="Time" />
-                                  <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
-                                      <div class="input-group-text">
-                                          <span class="lnr lnr-clock"></span>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-
-                          <div class="col-md-12">
-                              <select class="form-control" id="selectPerson">
-                                  <option></option>
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                  <option>5</option>
-                              </select>
-                          </div>
-               
-                          <div class="col-md-12 text-center">
-                              <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit">Reservar</button>
-                          </div>
-                      </div>
-                  </form>
-              </div>
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="section-content p-5">
+          <div class="heading-section text-center">
+            <h2>Reserva Tu Mesa</h2>
           </div>
+          <form method="post" name="contact-us" action="">
+            <div class="row">
+              <div class="col-md-12 mt-3">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Nombre">
+              </div>
+              <div class="col-md-12 mt-3">
+                <input type="text" class="form-control" id="email" name="email" placeholder="Correo electrónico">
+              </div>
+              <div class="col-md-12 mt-3">
+                <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Celular">
+              </div>
+              <div class="col-md-6 mt-3">
+                <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
+                  <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" placeholder="Fecha" />
+                  <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                    <div class="input-group-text">
+                      <span class="lnr lnr-calendar-full"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 mt-3">
+                <div class="input-group date" id="datetimepicker3" data-target-input="nearest">
+                  <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3" placeholder="Hora" />
+                  <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
+                    <div class="input-group-text">
+                      <span class="lnr lnr-clock"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12 mt-3">
+                <select class="form-control" id="selectPerson">
+                  <option value="" disabled selected>Seleccione una opción</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                </select>
+              </div>
+
+              <div class="col-md-12 mt-3 text-center">
+                <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit">Reservar</button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
-      
+      <div class="col-lg-6">
+        <div class="section-content p-5">
+          <div class="col-lg-12">
+            <input type="text" placeholder="Ingrese el nombre de su ciudad" id="city" value="" class="form-control">
+            <button id="btn" class="btn btn-primary mt-3">Mostrar Temperatura</button>
+          </div>
+          <div id="resultado" class="col-lg-12 mt-4"></div>
+          <script src="Java.js"></script>
+        </div>
+      </div>
+    </div>
   </div>
-</section> 
+</section>
+
+
+
+
+
 
 <!-- Footer -->
 
